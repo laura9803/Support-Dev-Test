@@ -80,10 +80,11 @@ function calculateTotalPerYear() {
     const totalPerMonth = dealSize * prospects * closeRatio;
     const totalPerYear = totalPerMonth * 12;
   
-    const maxTotalPerYear = 1000000;
+    const maxTotalPerYear = 10000000;
     const limitedTotalPerYear = Math.min(totalPerYear, maxTotalPerYear);
+    const limitedTotalPerYearRounded = Math.round(limitedTotalPerYear);
   
-    return limitedTotalPerYear;
+    return limitedTotalPerYearRounded;
   }
 
 function calculateROI() {
