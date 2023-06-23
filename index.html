@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ROI Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="divSelector">
+        <div class="divYellow pointer divSelectorJS1">
+            <p class="divSelector_P no-mg">B2B</p>
+        </div>
+        
+        <div class="pointer divSelectorJS2">
+            <p class="divSelector_P no-mg">B2C</p>
+        </div>
+        
+    </div>
+  <div class="container">
+    <div class="section">
+      <h2>Industry</h2>
+      <p>Choose your industry, or pick Average if you can't find it.</p>
+      <select id="industry">
+        <option value="" disabled selected>Select industry</option>        
+        <option value="average">Average</option>
+        <option value="industry1">Industry 1</option>
+        <option value="industry2">Industry 2</option>
+      </select>
+    </div>
+    <div class="section">
+      <h2>Average Deal Size $</h2>
+      <p>Choose the average size of your deals.</p>
+      <input type="range" id="deal-size" min="0" max="10000" step="100">
+      <span id="deal-size-value">$0</span>
+    </div>
+    <div class="section">
+        
+      <h2>B2B lead generation that sees your business through</h2>
+      <p id="total-per-year">0/YEAR</p>
+    </div>
+    <div class="section">
+      <h2>Number of B2B prospects</h2>
+      <p>Choose the number of prospects you want to engage each month.</p>
+      <input type="range" id="prospects" min="0" max="100" step="1">
+      <span id="prospects-value">0</span>
+    </div>
+    <div class="section">
+      <h2>Close Ratio (after appointment) %</h2>
+      <p>To calculate this number, divide the number of sales you made by the number of quotes you sent out.</p>
+      <input type="range" id="close-ratio" min="0" max="100" step="1">
+      <span id="close-ratio-value">0%</span>
+    </div>
+    <div class="section roi-results">
+        <div class="result-row">
+          <div class="result-column">
+            <span id="appointments-value">0</span>
+            <h3>Approx. number of appointment booked / monthly</h3>
+            
+          </div>
+          <div class="result-column">
+            <span id="roi-value">0%</span>
+            <h3>Return on marketing investment</h3>
+            
+          </div>
+        </div>
+        <div class="result-section">
+          <h3>Each model offers flexible pricing to fit your lead generation needs and stay within the limits of your budget.</h3>
+        </div>
+      </div>
+      
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+  

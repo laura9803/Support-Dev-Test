@@ -1,0 +1,129 @@
+html{
+background-color: #f3f3f3;
+}
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {    
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+  }
+  #industry {
+    width: 100%;
+    border: 2px solid #F2BD2A;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    color: #848484;
+    background-color: transparent;
+  }
+  
+  .section {    
+    padding: 20px;
+  }
+  
+  .section h2 {    
+    font-size: 16px;
+    margin-top: 0;
+  }
+  
+  .section p{
+    font-size: 14px;
+    color: #848484;
+  }
+ .section h3 {
+    
+    font-size: 12px;
+    color: #848484;
+    font-weight:lighter;
+    text-align: left;
+
+  } 
+  
+  .section select#industry {
+    width: 100%;
+  }  
+  .section input[type="range"] {
+    width: 100%;
+  }  
+  .section span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #848484;
+  }  
+  .section.roi-results {
+    text-align: center;
+  } 
+
+  #total-per-year, #appointments-value, #roi-value{
+    font-size: 28px;
+    font-weight: bold;
+    color: #F2BD2A;
+  } 
+     
+  #total-per-year span {
+    color: #848484;
+  }
+   
+  .result-row {
+    display: flex;
+  }
+  
+  .result-column {   
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .result-section {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .divSelector {
+    max-width: 960px;
+    margin-right: 12%;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    max-width: 15%;
+    max-height: 70%; 
+    padding-top: 1rem;    
+    text-align: center;
+    justify-self: end;
+   
+}
+.divSelector_P {
+    font-weight: 700;
+    color: black;
+}
+.divYellow {
+    border-radius: 10px;
+    background-color: #F2BD2A;
+    display: grid;
+    align-items: center;
+}
+.no-mg {
+    margin: 0 auto;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.divSelector p {
+    padding: 1rem;
+}
+  @media screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
